@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="./css/add2.css"> <!-- Create a separate CSS file for cart styles -->
+</head>
+<body>
+    <header class="header">
+        <h1>Your Shopping Cart</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="vegetablepage.html">Products</a>
+            <a href="contactus.html">Contact Us</a>
+        </nav>
+    </header>
+    
+    <section class="cart-container">
+        <table>
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                    <th>Remove</th>
+                </tr>
+            </thead>
+            <tbody id="cart-items">
+                <!-- Cart items will be dynamically added here -->
+            </tbody>
+        </table>
+        <section class="total">
+            <h3>Total: <span id="total-price">Rs.0/-</span></h3>
+        </section>
+        <section class="place-order">
+            <a href="./orderpage.html" id="place-order-btn" class="button">Place Order</a>
+
+        </section>
+    </section>
+
+    <footer>
+        <p>Copyright © 2021 PahasaraSuper All rights reserved</p>
+    </footer>
+
+    <script src="add2.js"></script> <!-- Create a separate JS file for cart functionality -->
+</body>
+</html>

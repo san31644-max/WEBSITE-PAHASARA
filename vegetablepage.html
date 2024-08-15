@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- divinectorweb.com -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PahasaraSuper Vgetebales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/vegetablepage.css">
+</head>
+<header class="header">
+
+  <div class="logo">
+      <h1><i class="fas fa-utensils"></i>PAHASARA<span>&nbsp;SUPER</span></h1>
+  </div>
+
+  <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+
+<!--sub menu-->
+<div class="menu">
+    <a href="#">Our Products <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+    <div class="submenu">
+        <a href="diary.html"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Dairy Products</a>
+
+        <a href="cosmetics.html">Cosmetics</a>
+        <a href="vegetablepage.html">Vegetables</a>
+        <a href="./BAKERY.HTML">Bakery Items</a>
+        <a href="meat and fish.html">Meat and Sea Foods</a>
+        <a href="fruitspage.html">Fruits</a>
+    </div>
+</div>
+     
+      
+      <a href="./contactus.html">Contact Us</a>
+      
+  </nav>
+  
+
+  <div class="icons">
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <div id="cart">
+          <a href="./add2.html">
+          <i class="fas fa-cart-plus"></i>
+      </a></div>
+      <div id="login">
+      <a href="login.html">
+          <i class="fas fa-user"></i>
+      </a></div>
+
+     
+  <div class="box">
+      <input type="text" placeholder="Search">
+      <a href="#">
+          <i class="fas fa-search"></i>
+      </a>
+  </div>
+  
+
+
+
+
+</header>
+<body>
+  <br><br><br>
+
+  <div class="slider"></div>
+    
+    
+  <div class="wrapper">
+
+<!-- Example for one product card -->
+<div class="single-card" data-product-id="1" data-product-name="BIG ONION 500G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/B ONION 500G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('1', 'BIG ONION 500G', 200, './images/B ONION 500G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>BIG ONION 500G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="2" data-product-name="Beans 250g" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/BEANS 250G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('2', 'Beans 250g', 200, './images/BEANS 250G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>Beans 250g</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="3" data-product-name="BEET ROOT 250G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/BEETROOT 500G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('3', 'BEET ROOT 250G', 200, './images/BEETROOT 500G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>BEET ROOT 250G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="4" data-product-name="BRINJAL 350G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/BRINJAL 350G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('4', 'BRINJAL 350G', 200, './images/BRINJAL 350G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>BRINJAL 350G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="5" data-product-name="CARROT 500G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/CARROT 5000G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('5', 'CARROT 500G', 200, './images/CARROT 5000G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>CARROT 500G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="6" data-product-name="CORIANDER LEAVES 50G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/CORIANDER LEAVES 50G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('6', 'CORIANDER LEAVES 50G', 200, './images/CORIANDER LEAVES 50G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>CORIANDER LEAVES 50G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="7" data-product-name="CUCUMBER 400G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/CUCUMBER 400G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('7', 'CUCUMBER 400G', 200, './images/CUCUMBER 400G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>CUCUMBER 400G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="8" data-product-name="GARLIC 250G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/GARLIC 250G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('8', 'GARLIC 250G', 200, './images/GARLIC 250G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>GARLIC 250G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="9" data-product-name="GREEN CHILLI 100G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/GREEN CHILLI 100G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('9', 'GREEN CHILLI 100G', 200, './images/GREEN CHILLI 100G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>GREEN CHILLI 100G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="10" data-product-name="LADIES FINGERS 250G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/LADIES FINGERS 250G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('10', 'LADIES FINGERS 250G', 200, './images/LADIES FINGERS 250G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>LADIES FINGERS 250G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="11" data-product-name="LEEKS 250G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/LEEKS 250G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('11', 'LEEKS 250G', 200, './images/LEEKS 250G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>LEEKS 250G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="12" data-product-name="TOMATO 500G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/TOMATO 500G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('12', 'TOMATO 500G', 200, './images/TOMATO 500G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>TOMATO 500G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="13" data-product-name="THREE COCONUTS" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/THREE COCONUT PIECES.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('13', 'THREE COCONUTS', 200, './images/THREE COCONUT PIECES.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>THREE COCONUTS</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="14" data-product-name="RED ONION 250G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/RED ONION 250G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('14', 'RED ONION 250G', 200, './images/RED ONION 250G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>RED ONION 250G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="15" data-product-name="PUMPKIN 500G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/PUMPKIN 500G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('15', 'PUMPKIN 500G', 200, './images/PUMPKIN 500G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>PUMPKIN 500G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+<div class="single-card" data-product-id="16" data-product-name="POTATO 500G" data-product-price="200">
+  <div class="img-area">
+      <img src="./images/POTATO 500G.jpg" alt="">
+      <div class="overlay">
+          <button class="add-to-cart" onclick="addToCart('16', 'POTATO 500G', 200, './images/POTATO 500G.jpg')">Add to Cart</button>
+          <button class="view-details">View Details</button>
+      </div>
+  </div>
+  <div class="info">
+      <h3>POTATO 500G</h3>
+      <p class="price">Rs.200/-</p>
+  </div>
+</div>
+
+    
+
+  
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Pahasara &nbsp;<span>Super</span></h3>
+
+        <p class="footer-links">
+                <a href="index.html">Home</a>
+                
+                <a href="aboutus.html">About</a>
+                
+                <a href="contact us.html">Contact</a>
+                
+                <a href="login.html">Login</a>
+
+    
+
+            </p>
+
+        <p class="footer-company-name">Copyright © 2021 <strong>PahasaraSuper</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>mawanella
+
+            </span>
+                location</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+94-774809998</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">sdkgalagedara365@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>hey hye hye</strong> 
+   
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+   
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

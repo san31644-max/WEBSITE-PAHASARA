@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-************" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+    <!-- css link here -->
+    <link rel="stylesheet" href="./css/cosmetics.css">
+
+    <title>PAHASARA SUPER</title>
+</head>
+<body>
+   
+
+    <header class="header">
+
+        <div class="logo">
+            <h1><i class="fas fa-utensils"></i>PAHASARA<span>&nbsp;SUPER</span></h1>
+        </div>
+
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+
+<!--sub menu-->
+<div class="menu">
+    <a href="#">Our Products <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+    <div class="submenu">
+        <a href="diary.html"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Dairy Products</a>
+
+        <a href="cosmetics.html">Cosmetics</a>
+        <a href="vegetablepage.html">Vegetables</a>
+        <a href="./BAKERY.HTML">Bakery Items</a>
+        <a href="meat and fish.html">Meat and Sea Foods</a>
+        <a href="fruitspage.html">Fruits</a>
+    </div>
+</div>
+           
+            
+            <a href="./contactus.html">Contact Us</a>
+            
+        </nav>
+        
+
+        <div class="icons">
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <div id="cart">
+                <a href="./add2.html">
+                    <i class="fas fa-cart-plus"></i>
+                    <span id="cart-count">0</span>
+                </a>
+            </div>
+            
+            <div id="login">
+            <a href="login.html">
+                <i class="fas fa-user"></i>
+            </a></div>
+
+           
+        <div class="box">
+            <input type="text" placeholder="Search">
+            <a href="#">
+                <i class="fas fa-search"></i>
+            </a>
+        </div>
+        
+
+
+
+
+    </header>
+    
+    <div class="About">
+        <br><br><br><br><br><br><br><br><br><br><br><br>
+        <h1>Welcome To Pahasara Super</h1>
+
+        <div class="main-about">
+
+            <div class="inner-about">
+                <div class="about-img">
+                    <img src="./images/cosmetics back.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="inner-about">
+                <div class="right-content-about">
+                    <h3>Welcome</h3>
+                    <h2>All things in Fresh <br> </h2>
+                <p>Dairy products are essential in many diets, providing rich sources of calcium, protein, and vitamins. From milk and cheese to yogurt and butter, they add flavor and nutrition to meals.</p>
+                <p>Enjoy diverse dairy products like creamy yogurts, savory cheeses, and delicious ice creams. Our range offers something for everyone, enhancing your culinary experiences with high-quality, nutritious options.</p>
+
+                <button>Read More</button>
+                </div>
+            </div>
+            
+        </div>
+
+
+    </div>
+
+    
+    <div class="card" data-product-id="1" data-product-name="Voodoo Perfume" data-product-price="650">
+        <div class="card-img" style="background-image: url('./images/voodoo colone spray 750.jpg');"></div>
+        <div class="card-content">
+            <h2>Voodoo Perfume</h2>
+            <p><span class="original-price">Rs.750/-</span> <span class="discounted-price"><br>Rs.650/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('1', 'Voodoo Perfume', 650, './images/voodoo colone spray 750.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="2" data-product-name="Vivya Pure And Glow Face Wash" data-product-price="450">
+        <div class="card-img" style="background-image: url('./images/vivya pure glow face wash 550.jpg');"></div>
+        <div class="card-content">
+            <h2>Vivya Pure And Glow Face Wash</h2>
+            <p><span class="original-price">Rs.550/-</span> <span class="discounted-price"><br>Rs.450/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('2', 'Vivya Pure And Glow Face Wash', 450, './images/vivya pure glow face wash 550.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="3" data-product-name="Velvet Body Lotion" data-product-price="650">
+        <div class="card-img" style="background-image: url('./images/velvet body lotion 800.jpg');"></div>
+        <div class="card-content">
+            <h2>Velvet Body Lotion</h2>
+            <p><span class="original-price">Rs.800/-</span> <span class="discounted-price"><br>Rs.650/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('3', 'Velvet Body Lotion', 650, './images/velvet body lotion 800.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="4" data-product-name="Vaseline Healthy Bright" data-product-price="400">
+        <div class="card-img" style="background-image: url('./images/vaseline healthy bright 470.jpg');"></div>
+        <div class="card-content">
+            <h2>Vaseline Healthy Bright</h2>
+            <p><span class="original-price">Rs.470/-</span> <span class="discounted-price"><br>Rs.400/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('4', 'Vaseline Healthy Bright', 400, './images/vaseline healthy bright 470.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="5" data-product-name="Sunsilk Smooth And Shine Shampoo" data-product-price="650">
+        <div class="card-img" style="background-image: url('./images/sunsilk 180ml.jpg');"></div>
+        <div class="card-content">
+            <h2>Sunsilk Smooth And Shine Shampoo</h2>
+            <p><span class="original-price">Rs.750/-</span> <span class="discounted-price"><br>Rs.650/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('5', 'Sunsilk Smooth And Shine Shampoo', 650, './images/sunsilk 180ml.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="6" data-product-name="Rexona Roll On Deodorant" data-product-price="800">
+        <div class="card-img" style="background-image: url('./images/rexona roll on deodrant 850.jpg');"></div>
+        <div class="card-content">
+            <h2>Rexona Roll On Deodorant</h2>
+            <p><span class="original-price">Rs.850/-</span> <span class="discounted-price"><br>Rs.800/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('6', 'Rexona Roll On Deodorant', 800, './images/rexona roll on deodrant 850.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="7" data-product-name="Ponds White And Beauty Facial Form" data-product-price="650">
+        <div class="card-img" style="background-image: url('./images/ponds white beauty facial form 700.jpg');"></div>
+        <div class="card-content">
+            <h2>Ponds White And Beauty Facial Form</h2>
+            <p><span class="original-price">Rs.700/-</span> <span class="discounted-price"><br>Rs.650/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('7', 'Ponds White And Beauty Facial Form', 650, './images/ponds white beauty facial form 700.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="8" data-product-name="Nature Secrets Cucumber Face Wash" data-product-price="340">
+        <div class="card-img" style="background-image: url('./images/nature secrets cucumber face wash 100ml 370.jpg');"></div>
+        <div class="card-content">
+            <h2>Nature Secrets Cucumber Face Wash</h2>
+            <p><span class="original-price">Rs.370/-</span> <span class="discounted-price"><br>Rs.340/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('8', 'Nature Secrets Cucumber Face Wash', 340, './images/nature secrets cucumber face wash 100ml 370.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="9" data-product-name="Nature Secrets Papaya Face Wash" data-product-price="350">
+        <div class="card-img" style="background-image: url('./images/n.s. papaya fw..370.jpg');"></div>
+        <div class="card-content">
+            <h2>Nature Secrets Papaya Face Wash</h2>
+            <p><span class="original-price">Rs.370/-</span> <span class="discounted-price"><br>Rs.350/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('9', 'Nature Secrets Papaya Face Wash', 350, './images/n.s. papaya fw..370.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="10" data-product-name="Lux Fragrant Body Wash" data-product-price="600">
+        <div class="card-img" style="background-image: url('./images/lux fragrent body wash 240ml 670.jpg');"></div>
+        <div class="card-content">
+            <h2>Lux Fragrant Body Wash</h2>
+            <p><span class="original-price">Rs.670/-</span> <span class="discounted-price"><br>Rs.600/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('10', 'Lux Fragrant Body Wash', 600, './images/lux fragrent body wash 240ml 670.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="11" data-product-name="Kumarika Hair Oil Fall Control" data-product-price="450">
+        <div class="card-img" style="background-image: url('./images/kumarika hair oil fall control 200ml 500ml.jpg');"></div>
+        <div class="card-content">
+            <h2>Kumarika Hair Oil Fall Control</h2>
+            <p><span class="original-price">Rs.500/-</span> <span class="discounted-price"><br>Rs.450/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('11', 'Kumarika Hair Oil Fall Control', 450, './images/kumarika hair oil fall control 200ml 500ml.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="12" data-product-name="Glow And Lovely Multivitamin Cream" data-product-price="600">
+        <div class="card-img" style="background-image: url('./images/glow and lovely multivitamin cream 650.jpg');"></div>
+        <div class="card-content">
+            <h2>Glow And Lovely Multivitamin Cream</h2>
+            <p><span class="original-price">Rs.650/-</span> <span class="discounted-price"><br>Rs.600/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('12', 'Glow And Lovely Multivitamin Cream', 600, './images/glow and lovely multivitamin cream 650.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="13" data-product-name="Sunsilk Black And Shine Shampoo" data-product-price="575">
+        <div class="card-img" style="background-image: url('./images/black and shine 625.jpg');"></div>
+        <div class="card-content">
+            <h2>Sunsilk Black And Shine Shampoo</h2>
+            <p><span class="original-price">Rs.625/-</span> <span class="discounted-price"><br>Rs.575/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('13', 'Sunsilk Black And Shine Shampoo', 575, './images/black and shine 625.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="14" data-product-name="Bellose Black Hair Colour Shampoo" data-product-price="340">
+        <div class="card-img" style="background-image: url('./images/belloose hair colour 390.jpg');"></div>
+        <div class="card-content">
+            <h2>Bellose Black Hair Colour Shampoo</h2>
+            <p><span class="original-price">Rs.390/-</span> <span class="discounted-price"><br>Rs.340/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('14', 'Bellose Black Hair Colour Shampoo', 340, './images/belloose hair colour 390.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="15" data-product-name="Axe Deo Dark Temptation" data-product-price="1650">
+        <div class="card-img" style="background-image: url('./images/axe deo dark temptation 1790.jpg');"></div>
+        <div class="card-content">
+            <h2>Axe Deo Dark Temptation</h2>
+            <p><span class="original-price">Rs.1790/-</span> <span class="discounted-price"><br>Rs.1650/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('15', 'Axe Deo Dark Temptation', 1650, './images/axe deo dark temptation 1790.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="16" data-product-name="4Ever Tea Tree Oil Face Wash" data-product-price="320">
+        <div class="card-img" style="background-image: url('./images/4ever tea tree oil face wash 360.jpg');"></div>
+        <div class="card-content">
+            <h2>4Ever Tea Tree Oil Face Wash</h2>
+            <p><span class="original-price">Rs.360/-</span> <span class="discounted-price"><br>Rs.320/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('16', '4Ever Tea Tree Oil Face Wash', 320, './images/4ever tea tree oil face wash 360.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+    <div class="card" data-product-id="17" data-product-name="Vaseline Aloe Soothe Lotion" data-product-price="380">
+        <div class="card-img" style="background-image: url('./images/425..vaselin...aloe soothe lotion 425.jpg');"></div>
+        <div class="card-content">
+            <h2>Vaseline Aloe Soothe Lotion</h2>
+            <p><span class="original-price">Rs.425/-</span> <span class="discounted-price"><br>Rs.380/-</span></p>
+            <a href="#" class="btn" onclick="addToCart('17', 'Vaseline Aloe Soothe Lotion', 380, './images/425..vaselin...aloe soothe lotion 425.jpg')">Shop Now</a>
+        </div>
+    </div>
+    
+</main>
+<footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Pahasara &nbsp;<span>Super</span></h3>
+
+        <p class="footer-links">
+            <a href="index.html">Home</a>
+            
+            <a href="aboutus.html">About</a>
+            
+            <a href="contact us.html">Contact</a>
+            
+            <a href="login.html">Login</a>
+
+
+
+        </p>
+
+        <p class="footer-company-name">Copyright © 2021 <strong>PahasaraSuper</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>mawanella
+
+            </span>
+                location</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+94-774809998</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">sdkgalagedara365@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>hey hye hye</strong> 
+   
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</footer>
+
+
+
+
+
+
+</body>
+<script src="main.js"></script>
+</html>
+
+

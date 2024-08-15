@@ -1,0 +1,143 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f9f0; /* Light green background for freshness */
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    border-bottom: 5px solid #388E3C; /* Darker green border */
+}
+
+.cart-container {
+    margin: 20px auto; /* Centered cart container */
+    max-width: 900px; /* Maximum width for larger screens */
+    background-color: white; /* White background for contrast */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #8BC34A; /* Light green header for the table */
+    color: white;
+    padding: 15px;
+}
+
+td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+td:hover {
+    background-color: #dcedc8; /* Light green on hover */
+}
+
+.total {
+    text-align: right;
+    font-weight: bold;
+    font-size: 20px; /* Increased font size for emphasis */
+    margin-top: 20px;
+    color: #4CAF50; /* Green color for total */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #4CAF50; /* Green footer */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border-top: 5px solid #388E3C; /* Darker green border */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .header {
+        padding: 15px;
+    }
+
+    .cart-container {
+        margin: 10px;
+        padding: 15px;
+    }
+
+    table {
+        font-size: 14px; /* Smaller font size for tablets */
+    }
+
+    th, td {
+        padding: 10px; /* Reduced padding */
+    }
+
+    .total {
+        font-size: 18px; /* Adjusted total font size for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        font-size: 18px; /* Smaller header font */
+    }
+
+    .cart-container {
+        padding: 10px; /* Less padding for mobile devices */
+    }
+
+    table {
+        font-size: 12px; /* Smaller font size for mobile */
+    }
+
+    th, td {
+        padding: 8px; /* Reduced padding */
+    }
+
+    .total {
+        font-size: 16px; /* Smaller total font size for mobile */
+    }
+}
+
+.place-order {
+    margin-top: 20px;
+    text-align: center; /* Center the button */
+}
+
+#place-order-btn {
+    background-color: #28a745; /* Green background */
+    color: white; /* White text */
+    border: none; /* No border */
+    padding: 10px 20px; /* Padding */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor on hover */
+    border-radius: 5px; /* Rounded corners */
+}
+
+#place-order-btn:hover {
+    background-color: #218838; /* Darker green on hover */
+}
+.button {
+    display: inline-block; /* Make the link behave like a button */
+    background-color: #28a745; /* Green background */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding inside the button */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    text-align: center; /* Center the text */
+    transition: background-color 0.3s; /* Transition effect for hover */
+}
+
+.button:hover {
+    background-color: #218838; /* Darker green on hover */
+}

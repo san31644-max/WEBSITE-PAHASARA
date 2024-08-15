@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+   <!-- divinectorweb.com -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PahasaraSuper Vgetebales</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="./css/vegetablepage.css">
+</head>
+<header class="header">
+
+  <div class="logo">
+      <h1><i class="fas fa-utensils"></i>PAHASARA<span>&nbsp;SUPER</span></h1>
+  </div>
+
+  <nav class="navbar">
+      <a href="index.html">Home</a>
+      <a href="aboutus.html">About Us</a>
+
+<!--sub menu-->
+<div class="menu">
+    <a href="#">Our Products <i class="fa fa-angle-down" aria-hidden="true"></i></a>
+
+    <div class="submenu">
+        <a href="diary.html"><i class="fa fa-hand-o-right" aria-hidden="true"></i> Dairy Products</a>
+
+        <a href="cosmetics.html">Cosmetics</a>
+        <a href="vegetablepage.html">Vegetables</a>
+        <a href="./BAKERY.HTML">Bakery Items</a>
+        <a href="meat and fish.html">Meat and Sea Foods</a>
+        <a href="fruitspage.html">Fruits</a>
+    </div>
+</div>
+     
+      
+      <a href="./contactus.html">Contact Us</a>
+      
+  </nav>
+  
+
+  <div class="icons">
+      <div id="menu-bar" class="fas fa-bars"></div>
+      <div id="cart">
+          <a href="./add2.html">
+          <i class="fas fa-cart-plus"></i>
+      </a></div>
+      <div id="login">
+      <a href="login.html">
+          <i class="fas fa-user"></i>
+      </a></div>
+
+     
+  <div class="box">
+      <input type="text" placeholder="Search">
+      <a href="#">
+          <i class="fas fa-search"></i>
+      </a>
+  </div>
+  
+
+
+
+
+</header>
+<body>
+  <br><br><br>
+
+  <div class="slider"></div>
+    
+    
+  <div class="wrapper">
+
+<!-- Example for one product card -->
+<div class="single-card" data-product-id="1" data-product-name="Thalapath slices" data-product-price="1000">
+    <div class="img-area">
+        <img src="./images/thalapath slices.jpg" alt="Thalapath slices">
+        <div class="overlay">
+            <button class="add-to-cart" onclick="addToCart('1', 'Thalapath slices', 1000, './images/thalapath slices.jpg')">Add to Cart</button>
+            <button class="view-details">View Details</button>
+        </div>
+    </div>
+    <div class="info">
+        <h3>Thalapath slices</h3>
+        <p class="price">Rs.1000/-</p>
+    </div>
+</div>
+
+<div class="single-card" data-product-id="2" data-product-name="Prima Chicken 1kg" data-product-price="1100">
+    <div class="img-area">
+        <img src="./images/chicken.jpg" alt="Prima Chicken 1kg">
+        <div class="overlay">
+            <button class="add-to-cart" onclick="addToCart('2', 'Prima Chicken 1kg', 1100, './images/chicken.jpg')">Add to Cart</button>
+            <button class="view-details">View Details</button>
+        </div>
+    </div>
+    <div class="info">
+        <h3>Prima Chicken 1kg</h3>
+        <p class="price">Rs.1100/-</p>
+    </div>
+</div>
+
+<div class="single-card" data-product-id="3" data-product-name="Linna slices" data-product-price="500">
+    <div class="img-area">
+        <img src="./images/linna.jpg" alt="Linna slices">
+        <div class="overlay">
+            <button class="add-to-cart" onclick="addToCart('3', 'Linna slices', 500, './images/linna.jpg')">Add to Cart</button>
+            <button class="view-details">View Details</button>
+        </div>
+    </div>
+    <div class="info">
+        <h3>Linna slices</h3>
+        <p class="price">Rs.500/-</p>
+    </div>
+</div>
+
+<div class="single-card" data-product-id="4" data-product-name="Diamond Tuna" data-product-price="1000">
+    <div class="img-area">
+        <img src="./images/diamond tuna.jpg" alt="Diamond Tuna">
+        <div class="overlay">
+            <button class="add-to-cart" onclick="addToCart('4', 'Diamond Tuna', 1000, './images/diamond tuna.jpg')">Add to Cart</button>
+            <button class="view-details">View Details</button>
+        </div>
+    </div>
+    <div class="info">
+        <h3>Diamond Tuna</h3>
+        <p class="price">Rs.1000/-</p>
+    </div>
+</div>
+
+<div class="single-card" data-product-id="5" data-product-name="Bairaha Sausages" data-product-price="600">
+    <div class="img-area">
+        <img src="./images/bairah sausages.jpg" alt="Bairaha Sausages">
+        <div class="overlay">
+            <button class="add-to-cart" onclick="addToCart('5', 'Bairaha Sausages', 600, './images/bairah sausages.jpg')">Add to Cart</button>
+            <button class="view-details">View Details</button>
+        </div>
+    </div>
+    <div class="info">
+        <h3>Bairaha Sausages</h3>
+        <p class="price">Rs.600/-</p>
+    </div>
+</div>
+
+<div class="single-card" data-product-id="6" data-product-name="Crysbro Chicken 1kg" data-product-price="1000">
+    <div class="img-area">
+        <img src="./images/crysbro chicken.jpg" alt="Crysbro Chicken 1kg">
+        <div class="overlay">
+            <button class="add-to-cart" onclick="addToCart('6', 'Crysbro Chicken 1kg', 1000, './images/crysbro chicken.jpg')">Add to Cart</button>
+            <button class="view-details">View Details</button>
+        </div>
+    </div>
+    <div class="info">
+        <h3>Crysbro Chicken 1kg</h3>
+        <p class="price">Rs.1000/-</p>
+    </div>
+</div>
+
+<div class="single-card" data-product-id="7" data-product-name="My Choice Mackerel" data-product-price="499">
+    <div class="img-area">
+        <img src="./images/my choice mackerak.jpg" alt="My Choice Mackerel">
+        <div class="overlay">
+            <button class="add-to-cart" onclick="addToCart('7', 'My Choice Mackerel', 499, './images/my choice mackerak.jpg')">Add to Cart</button>
+            <button class="view-details">View Details</button>
+        </div>
+    </div>
+    <div class="info">
+        <h3>My Choice Mackerel</h3>
+        <p class="price">Rs.499/-</p>
+    </div>
+</div>
+
+<div class="single-card" data-product-id="8" data-product-name="Chicken Meat Balls" data-product-price="300">
+    <div class="img-area">
+        <img src="./images/chiken meat balls.jpg" alt="Chicken Meat Balls">
+        <div class="overlay">
+            <button class="add-to-cart" onclick="addToCart('8', 'Chicken Meat Balls', 300, './images/chiken meat balls.jpg')">Add to Cart</button>
+            <button class="view-details">View Details</button>
+        </div>
+    </div>
+    <div class="info">
+        <h3>Chicken Meat Balls</h3>
+        <p class="price">Rs.300/-</p>
+    </div>
+</div>
+
+
+
+
+
+    
+
+  
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Pahasara &nbsp;<span>Super</span></h3>
+
+        <p class="footer-links">
+                <a href="index.html">Home</a>
+                
+                <a href="aboutus.html">About</a>
+                
+                <a href="contact us.html">Contact</a>
+                
+                <a href="login.html">Login</a>
+
+    
+
+            </p>
+
+        <p class="footer-company-name">Copyright © 2021 <strong>PahasaraSuper</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>mawanella
+
+            </span>
+                location</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+94-774809998</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">sdkgalagedara365@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>About the company</span>
+            <strong>hey hye hye</strong> 
+   
+        </p>
+        <div class="footer-icons">
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/lil_sandu21?igsh=OTNjY2s5aGFnenNw"><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+   
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>
